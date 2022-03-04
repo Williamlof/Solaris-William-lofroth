@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <h1>SOLSYSTEMET</h1>
+        <h2>SOLARIS</h2>
+      </header>
+      <main class="main">
+        <section class="main-left">
+          <img class="planet" src="/assets/Subtract.svg" alt="" />
+        </section>
+
+        <section class="main-right">
+          <img class="planet mercury" src="/assets/Ellipse 2.svg" alt="" />
+          <img class="planet venus" src="/assets/Ellipse 3.svg" alt="" />
+          <img class="planet earth" src="/assets/Ellipse 4.svg" alt="" />
+          <img class="planet mars" src="/assets/Ellipse 5.svg" alt="" />
+          <img class="planet jupiter" src="/assets/Ellipse 6.svg" alt="" />
+          <img class="planet saturn" src="/assets/Group 1.svg" alt="" />
+          <img class="planet uranus" src="/assets/Ellipse 8.svg" alt="" />
+          <img class="planet neptune" src="/assets/Ellipse 9.svg" alt="" />
+        </section>
+      </main>
+      <footer class="footer">
+        <img src="/assets/Vector (1).svg" alt="" />
+      </footer>
+    </div>
+    <div class="overlay">
+      <div class="overlay-wrapper">
+        <main class="main">
+          <section class="main-left">
+            <img class="sun closeBtn" src="/assets/Subtract.svg" alt="" />
+          </section>
+
+          <section class="main-center">
+            <article class="text-info">
+              <h1 id="planet-name"></h1>
+              <h2 id="planet-name-latin"></h2>
+              <p id="planet-desc"></p>
+            </article>
+
+            <article class="stats-info">
+              <section class="stats-info-container">
+                <section>
+                  <h3>OMKRETS</h3>
+                  <p id="planet-circumference"></p>
+                </section>
+
+                <section>
+                  <h3>KM FRÅN SOLEN</h3>
+                  <p id="distanceFromSun"></p>
+                </section>
+
+                <section>
+                  <h3>MAX TEMPERATUR</h3>
+                  <p id="maxTemp"></p>
+                </section>
+
+                <section>
+                  <h3>MIN TEMPERATUR</h3>
+                  <p id="minTemp"></p>
+                </section>
+              </section>
+            </article>
+            <article class="moon-info">
+              <h3>MÅNAR</h3>
+              <p id="moons"></p>
+            </article>
+          </section>
+        </main>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

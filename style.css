@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Mochiy+Pop+One&family=News+Cycle:wght@700&family=Open+Sans:wght@300;500&family=Secular+One&display=swap, https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Lora&family=Mochiy+Pop+One&family=News+Cycle:wght@700&family=Open+Sans:wght@300;500&family=Secular+One&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(269.84deg, #0c164d 0.11%, #190b22 99.83%);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper.hidden {
+  display: none;
+}
+
+.header {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 5em;
+}
+
+.header h1 {
+  font-family: "Secular One";
+  color: white;
+  letter-spacing: 0.2em;
+  font-size: 4em;
+}
+
+.header h2 {
+  font-family: "Lora";
+  color: #ffd029;
+  letter-spacing: 0.6em;
+  font-size: 1.5em;
+}
+
+.main {
+  height: 60%;
+  width: 100%;
+  display: flex;
+}
+
+.main-left {
+  height: 100%;
+  width: 10%;
+}
+
+.main-left img {
+  width: 20%;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: 0.2s ease-in-out;
+  transform: scale(1);
+}
+.main-left img:hover {
+  width: 20%;
+  z-index: 0;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transition: 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.main-right {
+  padding-left: 10em;
+  width: 90%;
+  display: flex;
+  z-index: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main img {
+  cursor: pointer;
+}
+
+.main-right .planet {
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  transform: scale(1);
+}
+.mercury {
+  width: 1%;
+}
+
+.venus {
+  width: 2%;
+}
+
+.earth {
+  width: 2%;
+}
+
+.mars {
+  width: 1%;
+}
+
+.jupiter {
+  width: 10%;
+}
+
+.saturn {
+  width: 8%;
+}
+
+.uranus {
+  width: 4%;
+}
+
+.neptune {
+  width: 4%;
+}
+
+.main-right > *:hover {
+  transition: 0.2s ease-in-out;
+  transform: scale(1.2);
+}
+
+.Solen {
+  filter: none;
+}
+
+.Merkurius {
+  -webkit-filter: contrast(128%) brightness(51%) saturate(39%) sepia(90%)
+    grayscale(31%) invert(91%);
+  filter: contrast(128%) brightness(51%) saturate(39%) sepia(90%) grayscale(31%)
+    invert(91%);
+}
+
+.Venus {
+  -webkit-filter: saturate(22%);
+  filter: saturate(22%);
+}
+
+.Jorden {
+  -webkit-filter: contrast(98%) brightness(69%) saturate(200%) sepia(100%)
+    invert(96%);
+  filter: contrast(98%) brightness(69%) saturate(200%) sepia(100%) invert(96%);
+}
+
+.Mars {
+  -webkit-filter: contrast(59%) brightness(200%) saturate(170%) grayscale(21%)
+    invert(79%) hue-rotate(95deg);
+  filter: contrast(59%) brightness(200%) saturate(170%) grayscale(21%)
+    invert(79%) hue-rotate(95deg);
+}
+
+.Jupiter {
+  -webkit-filter: contrast(59%) brightness(69%) saturate(170%) grayscale(21%)
+    invert(79%) hue-rotate(140deg);
+  filter: contrast(59%) brightness(69%) saturate(170%) grayscale(21%)
+    invert(79%) hue-rotate(140deg);
+}
+
+.Saturnus {
+  -webkit-filter: contrast(59%) brightness(69%) saturate(170%) grayscale(21%)
+    invert(79%) hue-rotate(162deg);
+  filter: contrast(59%) brightness(69%) saturate(170%) grayscale(21%)
+    invert(79%) hue-rotate(162deg);
+}
+
+.Uranus {
+  -webkit-filter: sepia(85%) grayscale(58%);
+  filter: sepia(85%) grayscale(58%);
+}
+
+.Neptunus {
+  -webkit-filter: contrast(79%) brightness(76%) sepia(75%) grayscale(90%)
+    invert(33%) hue-rotate(208deg);
+  filter: contrast(79%) brightness(76%) sepia(75%) grayscale(90%) invert(33%)
+    hue-rotate(208deg);
+}
+
+.footer {
+  height: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.footer img {
+  width: 5%;
+}
+
+.overlay-wrapper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-image: url(/assets/stars/stars.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(269.84deg, #0c164d 0.11%, #190b22 99.83%);
+  overflow: hidden;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay h1,
+h2,
+h3,
+p {
+  color: white;
+}
+
+.overlay h1 {
+  font-size: 4em;
+  letter-spacing: 0.2em;
+}
+
+.overlay h2 {
+  font-size: 2em;
+  letter-spacing: 0.9em;
+  color: #ffd029;
+}
+
+.overlay p {
+  font-family: Roboto Condensed;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 170%;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.overlay.display {
+  display: flex;
+}
+
+.overlay article {
+  border-bottom: 2px solid rgba(145, 115, 115, 0.5);
+  padding-top: 1em;
+}
+
+.overlay .stats-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay .main {
+  width: 75%;
+  height: 100%;
+  padding: 3em;
+}
+
+.overlay .main .main-center {
+  padding-top: 5em;
+  padding-left: 20em;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100%;
+}
+
+.overlay .main .main-right {
+  width: 10%;
+  height: 100%;
+}
+
+.overlay .stats-info .stats-info-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.overlay .stats-info .stats-info-container section {
+  width: 40%;
+}
